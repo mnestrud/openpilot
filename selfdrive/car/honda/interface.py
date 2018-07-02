@@ -238,7 +238,7 @@ class CarInterface(object):
       ret.mass = 3612. * CV.LB_TO_KG + std_cargo #3512 curb weight + 100lb sound deadening
       ret.wheelbase = 2.66
       ret.centerToFront = ret.wheelbase * 0.43 #change from 0.41 (EX 2WD val) to 0.43 (Touring value)
-      ret.steerRatio = 12.30
+      ret.steerRatio = 13.53 #published value is 12.30.  Increasing by 10% to acknowledge higher ratio at hwy speeds.
       ret.steerKpV, ret.steerKiV = [[0.6], [0.18]]
 
       ret.longitudinalKpBP = [0., 5., 35.]
