@@ -1,0 +1,10 @@
+#to update with latest upstream
+
+cd /data/openpilot
+git fetch upstream
+git checkout devel
+git merge upstream/devel
+git push origin devel
+
+#to manually remove drives
+rm -rf /storage/self/primary/realdata/*
