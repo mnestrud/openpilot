@@ -8,3 +8,9 @@ git push origin devel
 
 #to manually remove drives
 rm -rf /storage/self/primary/realdata/*
+
+#to remove commits
+git reset --hard HEAD~1
+
+#to force to upstream
+git push origin devel --force
